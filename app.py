@@ -17,14 +17,10 @@ def main():
             with st.spinner("Removing background..."):
                 # Remove background
                 result = remove(np.array(image))
-
                 # Convert numpy array with alpha channel to PIL Image
                 result_image = Image.fromarray(result, mode="RGBA")
 
-                # Display result image
                 st.image(result_image, caption="Background Removed", use_column_width=True)
-
-                # Provide download link for the result image
                 result_bytes_io = io.BytesIO()
                 result_image.save(result_bytes_io, format="PNG")
                 result_bytes_io.seek(0)
