@@ -12,7 +12,7 @@ st.set_page_config(
     initial_sidebar_state="auto",
 )
 def main():
-    st.subheader("Foscraft's Image Background Remover App")
+    st.markdown("Foscraft's Image Background Remover App")
 
     uploaded_file = st.file_uploader("Upload an image and remove background with one click!", type=["png", "jpg", "jpeg"])
     
