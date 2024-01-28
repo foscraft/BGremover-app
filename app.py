@@ -7,7 +7,7 @@ import numpy as np
 def main():
     st.subheader("Foscraft's Image Background Remover App")
 
-    uploaded_file = st.file_uploader("Upload an image", type=["png", "jpg", "jpeg"])
+    uploaded_file = st.file_uploader("Upload an image and remove background with one click!", type=["png", "jpg", "jpeg"])
     
     if uploaded_file is not None:
         image = Image.open(uploaded_file)
