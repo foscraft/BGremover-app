@@ -13,6 +13,11 @@ st.set_page_config(
 )
 def main():
     st.markdown("Foscraft's Image Background Remover App")
+    
+    twitter_handle = "foscraft"
+    #twitter_link = f"[This is my Github](https://github.com/{twitter_handle})"
+    twitter_link = f'<a href="https://github.com/{twitter_handle}" target="_blank"><button style="padding: 10px; background-color: #228B22; color: white; border: none; border-radius: 5px; cursor: pointer;">This is my Github</button></a>'
+    st.markdown(twitter_link, unsafe_allow_html=True)
 
     uploaded_file = st.file_uploader("Upload an image and remove background with one click!", type=["png", "jpg", "jpeg"])
     
