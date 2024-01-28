@@ -4,6 +4,13 @@ from PIL import Image
 import io
 import numpy as np
 
+
+
+st.set_page_config(
+    page_title = "foscraft",
+    page_icon="images/favicon.ico",
+    initial_sidebar_state="auto",
+)
 def main():
     st.subheader("Foscraft's Image Background Remover App")
 
